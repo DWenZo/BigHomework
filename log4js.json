@@ -1,0 +1,17 @@
+{
+  "appenders":[
+    {"type":"console","category":"console"},
+    {
+      "type":"dateFile",
+      "filename":"./logs/",
+      "pattern":"debug/yyyyMMddhh.txt",
+      "maxLogSize":1024,
+      "absolute":true,
+      "backups":3,
+      "alwaysIncludePattern":true,
+      "category":"logInfo"
+    }
+  ],
+  "replaceConsole":true,
+  "levels":{"logInfo":"DEBUG"}
+}
